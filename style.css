@@ -1,0 +1,372 @@
+/*
+Theme Name: HAVANA
+Author: GREY
+Version: 1.0
+Text Domain: havana
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Fonts
+#
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'FuturaBook';
+    src: url('fonts/FuturaStd-Book.eot');
+    src: url('fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Book.woff2') format('woff2'),
+        url('fonts/FuturaStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('fonts/FuturaStd-Bold.eot');
+    src: url('fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Bold.woff2') format('woff2'),
+        url('fonts/FuturaStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  background: url(img/bg-havana-large.jpg)center no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.content-general-left{
+  float: left;
+  width:33%;
+  height: 10vw
+}
+
+.content-general-center{
+  float: left;
+  width: 33%;
+  margin: 17vw 0px 0px 1.32%;
+}
+
+.content-general-center .form-table th{
+  display: none;
+}
+
+.form-table{
+  width: 100%
+}
+
+.form-table td input{
+    width: 89%;
+    height: 1.2vw;
+    border-radius: 12px;
+    font-family: FuturaBook;
+    display: block;
+    font-size: 0.9vw;
+    padding: 4% 1% 4% 7%;
+    background: url(img/bg-input.svg) center no-repeat;
+    background-size: contain;
+    border: none !important;
+    margin: 0.2vw 0px;
+    z-index: 99;
+    position: relative;
+    box-shadow: -1px 8px 20px 1px #00000000;
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transition: all cubic-bezier(0, 0, 0, 0.98) 0.2s;
+    -webkit-transition: all cubic-bezier(0, 0, 0, 0.98) 0.2s;
+    -moz-transition: all cubic-bezier(0, 0, 0, 0.98) 0.2s;
+}
+
+.form-table td input[type=submit]{
+  width: 97%;
+  height: 1.5vw;
+  display: block;
+  font-size: 1vw;
+  padding: 6% 0% 8%;
+  background: url(img/bg-send.svg) center no-repeat;
+  background-size: contain;
+  border: none !important;
+  margin: 0.2vw 0px;
+  border-radius: 16px;
+  z-index: 99;
+  color: #e6e65e;
+  cursor: pointer;
+  position: relative;
+  box-shadow: -1px 8px 20px 1px #00000000;
+  transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  -moz-transform: scale(1,1);
+  transition: all cubic-bezier(0, 0, 0, 0.98) 0.2s;
+  -webkit-transition: all cubic-bezier(0, 0, 0, 0.98) 0.2s;
+  -moz-transition: all cubic-bezier(0, 0, 0, 0.98) 0.2s;
+  opacity: 0.9;
+}
+
+.form-table td input[type=submit]:hover{
+  letter-spacing: 0.2vw;
+  opacity: 1;
+}
+
+.form-table td input[type=submit]:focus{
+  letter-spacing: 0.2vw;
+  opacity: 1;
+  transform: scale(1,1) !important;
+  -webkit-transform: scale(1,1) !important;
+  -moz-transform: scale(1,1) !important;
+  box-shadow: -1px 8px 20px 1px #00000000 !important;
+}
+
+.main-content-form{
+  position: relative;
+}
+
+.form-table td input:focus{
+    outline: none !important;
+    transform: scale(1.06,1.06);
+    -webkit-transform: scale(1.06,1.06);
+    -moz-transform: scale(1.06,1.06);
+    box-shadow: -1px 8px 20px 1px #00000052;
+      z-index: 9999;
+}
+
+.pdb-error{
+  border:none !important;
+  box-shadow: 0px 0px 0px 0px !important;
+  padding:0px !important;
+  background: none !important;
+
+}
+
+ .pdb-error-codigo_botella{
+    position: absolute;
+    top: 0.7vw;
+    right: -3vw;
+    font-size: 0.9vw;
+    z-index: 999999;
+    background: white;
+  color: #b32e2e;
+    padding: 1vw;
+    box-shadow: 0px 6px 9px 1px #6b171740;
+    border-radius: 2px;
+        font-family: futura;
+}
+
+ .pdb-error-first_name{
+    position: absolute;
+    top: 4.9vw;
+    right: -3vw;
+    font-size: 0.9vw;
+    z-index: 999999;
+    background: white;
+    color: #b32e2e;
+    padding: 1vw;
+    box-shadow: 0px 6px 9px 1px #6b171740;
+    border-radius: 2px;
+        font-family: futura;
+}
+
+.pdb-error-edad{
+  position: absolute;
+top: 9.2vw;
+right: -3vw;
+font-size: 0.9vw;
+z-index: 999999;
+background: white;
+color: #b32e2e;
+padding: 1vw;
+box-shadow: 0px 6px 9px 1px #6b171740;
+border-radius: 2px;
+    font-family: futura;
+}
+
+.pdb-error-mail{
+  position: absolute;
+top: 13.6vw;
+right: -3vw;
+font-size: 0.9vw;
+z-index: 999999;
+background: white;
+color: #b32e2e;
+padding: 1vw;
+box-shadow: 0px 6px 9px 1px #6b171740;
+border-radius: 2px;
+    font-family: futura;
+}
+
+.pdb-error-telefono{
+  position: absolute;
+top: 17.9vw;
+right: -3vw;
+font-size: 0.9vw;
+z-index: 999999;
+background: white;
+color: #b32e2e;
+padding: 1vw;
+box-shadow: 0px 6px 9px 1px #6b171740;
+border-radius: 2px;
+    font-family: futura;
+}
+
+.pdb-error-email{
+    position: absolute;
+    top: 13.7vw;
+    right: -3vw;
+    font-size: 0.9vw;
+    z-index: 999999;
+    background: white;
+    color: #b32e2e;
+    padding: 1vw;
+    box-shadow: 0px 6px 9px 1px #6b171740;
+    border-radius: 2px;
+        font-family: futura;
+}
+
+.content-preform p{
+  font-size: 0.84vw;
+  font-family: FuturaBook;
+  padding: 0vw 1vw 1vw;
+}
+
+.logo-general{
+  height: auto;
+  width: 10vw;
+  margin: 1.4vw 0px 0px 8.7vw;
+}
+
+.content-general-bottles{
+  position: relative;
+}
+
+.content-signle-bottles{
+    display: block;
+    margin: 3vw auto;
+    width: 73%;
+    position: relative;
+}
+
+.content-codigo{
+  position: absolute;
+      bottom: 0;
+      height: 5vw;
+      left: 11vw;
+}
+
+footer p {
+  width: 100%;
+  background: white;
+  margin: 4vw 0px 0px;
+  padding: 0.7vw 0px;
+  font-size: 0.66vw;
+  text-align: center;
+  font-family: futuraBook;
+  position: absolute;
+  color: #636363;
+  bottom: 0px;
+  height: 1vw;
+}
+
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+  .scene_element{
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  .scene_element--fadein {
+    animation-name: fadeIn;
+    animation-duration: 0.35s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+    animation-duration: 0.35s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+
+  /** Reverse "exit" animations */
+  is-exiting {
+        animation-direction: alternate-reverse;
+}
+
+
+.content-general-success{
+          position: fixed;
+          background: #00000052;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 9999999;
+          filter: blur(20%);
+}
+
+.pdb-thanks{
+    background: white;
+    display: table;
+    padding: 3vw;
+    margin: 22vw auto;
+    text-align: center;
+}
